@@ -1,0 +1,20 @@
+// Database Account
+Username: VQWCmZQthq
+
+Password: uY22oip7BB
+
+Database Name: VQWCmZQthq
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+
+// github Account 
+
+username = uscsteam
+password = uscs@1234
+
+// Hosting Account 
+email = mabdulmonembrowser 
