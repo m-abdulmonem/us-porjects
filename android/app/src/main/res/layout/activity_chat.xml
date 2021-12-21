@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/conversation_appBARLAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:id="@+id/user_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_back_line"
+                    android:layout_marginEnd="10dp"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_conversation_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/background_flower"
+                    app:civ_border_color="@color/colorWhite"
+                    app:civ_border_width="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/colorWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mohamed Abdulmonem"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="-39dp"/>
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:text="@string/active"-->
+                <!--/>-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_phone" />
+                    <ImageView
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_video"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_more"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:elevation="16dp"
+            android:background="?android:attr/windowBackground">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/background_flower"
+                android:layout_marginStart="18dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/background_flower"
+                android:layout_marginStart="18dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/background_flower"
+                android:layout_marginStart="18dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/background_flower"
+                android:layout_marginStart="18dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/background_flower"
+                android:layout_marginStart="18dp"/>
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_recycler_view"
+        android:layout_below="@id/conversation_appBARLAYOUT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sender_tools_container"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/sender_tools_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="50dp"
+        android:background="#0369AC"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mic"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:layout_toEndOf="@id/mic"
+            android:layout_toStartOf="@id/send_btn"
+            android:id="@+id/msg_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_border_none"
+            android:hint="Type Message"
+            android:layout_marginStart="10dp"
+            android:textColorHint="@color/colorWhite"
+            android:textColor="@color/colorWhite" />
+        <ImageView
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

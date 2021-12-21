@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/song_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/light_black"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="35px"
+        android:layout_toEndOf="@+id/song_image"
+        android:text="Believer"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/songer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/song_image"
+        android:layout_alignParentTop="@+id/song_name"
+        android:text="Believer"
+        android:textSize="17sp"/>
+</RelativeLayout>

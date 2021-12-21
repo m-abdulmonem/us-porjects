@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp">
+
+
+        <ImageView
+            android:id="@+id/album_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/background_flower"
+            android:scaleType="fitXY"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hot"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/border_radius"
+            android:padding="8dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/album_image"
+            android:layout_marginBottom="60dp"
+            android:layout_marginStart="40dp"
+            android:text="Try Me"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/album_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/album_image"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="40dp"
+            android:text="15 mars 2019"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:id="@+id/album_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_like_full"
+            android:background="@drawable/music_love"
+            android:padding="5dp"
+            android:layout_alignBottom="@id/album_image"
+            android:layout_alignEnd="@id/album_image"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="30dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/conversation_user_pic"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/background_flower"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/conversation_username"
+        android:layout_toEndOf="@+id/conversation_user_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohamed Abdul El-Monem"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/conversation_last_message"
+        android:layout_toEndOf="@+id/conversation_user_pic"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"/>
+    <TextView
+        android:id="@+id/conversation_date"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 min" />
+    <TextView
+        android:id="@+id/conversation_message_count"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="31dp"
+        android:text="2"
+        android:background="@drawable/message_count"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:gravity="top"/>
+</RelativeLayout>
+</RelativeLayout>

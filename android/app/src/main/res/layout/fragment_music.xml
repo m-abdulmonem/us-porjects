@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.MusicFragment"
+    android:background="#DAD8D8">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/music_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar_music"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/menu_music"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/ic_menu"
+                    tools:ignore="RtlCompat,VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/recommended"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="@string/for_you"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sd_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toEndOf="@id/recommended"
+                    android:alpha="0.5"
+                    android:text="@string/sd_card"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="60dp"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    tools:ignore="RtlCompat,VectorDrawableCompat" />
+
+                <ImageView
+                    android:id="@+id/search_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/ic_search"
+                    tools:ignore="RtlCompat,VectorDrawableCompat" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/music_app_bar_layout">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/new_album_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/new_music"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_album"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="10dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/new_music"
+                android:id="@+id/music_new_album_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/music_recent_fashion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/recent_fashion_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recent_fashion"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="10dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/recent_fashion_title"
+                android:id="@+id/recent_fashion_recycler_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.duanhong169:camera:1.0.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17ce8c6a25da9ff4a2fafac80489c21b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17ce8c6a25da9ff4a2fafac80489c21b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.duanhong169/camera/1.0.3/74e02baae214e6436450237faf7f31785021a3aa/camera-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
